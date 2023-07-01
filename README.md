@@ -49,6 +49,9 @@ Before running the `spark_stream.py` script, ensure you have the following:
 - Kafka broker running on `localhost:9092`.
 - Kafka topic name specified in the `kafka_topic` variable.
 - HDFS (Hadoop Distributed File System) configured and running on `hdfs://127.0.0.1:9000`.
+```shell
+$HADOOP_HOME/sbin/start-all.sh
+```
 
 ### Usage
 
@@ -78,6 +81,15 @@ The `spark_stream.py` script performs several analytics on the log data received
 - 404 response codes analysis
 
 The results of these analytics are written to Parquet files in the HDFS output path specified in the script.
+
+## Jupyter Notebook: SectionB_demo.ipynb
+
+The SectionB_demo.ipynb notebook demonstrates the results of the log analytics performed using the Kafka producer and Spark Streaming. It provides a step-by-step walkthrough of the analytics process and presents visualizations and analysis of the log data.
+
+To run the notebook, ensure you have Jupyter Notebook installed and execute the following command:
+```shell
+jupyter notebook SectionB_demo.ipynb
+```
 
 ## Contributing
 
