@@ -91,6 +91,10 @@ To run the notebook, ensure you have Jupyter Notebook installed and execute the 
 jupyter notebook SectionB_demo.ipynb
 ```
 
+## Reference
+
+This project is based on the article "Scalable Log Analytics with Apache Spark: A Comprehensive Case Study" by *Dipanjan (DJ) Sarkar*. You can find the article [here](https://towardsdatascience.com/scalable-log-analytics-with-apache-spark-a-comprehensive-case-study-2be3eb3be977).
+
 ## Contributing
 
 Contributions to this log analytics project are welcome. If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
