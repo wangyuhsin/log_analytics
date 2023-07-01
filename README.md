@@ -6,7 +6,7 @@ This repository contains two Python scripts for log analytics: `kafka_producer.p
 
 To initiate the process, we need to feed the data, which is an input file, into the Kafka producer. This can be achieved through various approaches, one such approach is injecting the data line by line (feel free to come up with other ideas). This producer is responsible for publishing the data to a specific topic to which it is subscribed.
 
-Once the data is injected, the Kafka consumer, which is also subscribed to the same topic, will periodically check for new data. In this case, it will check for available data every 10 seconds.
+After the data is injected, the Kafka consumer, which is also subscribed to the same topic, will periodically check for new data. In this case, it will check for available data every 10 seconds.
 
 Once the data is received by the consumer, we will utilize Spark to perform transformations and conduct exploratory data analysis (EDA), employing techniques similar to those discussed in the article.
 
