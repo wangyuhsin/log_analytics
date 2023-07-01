@@ -1,3 +1,5 @@
 kafka_python==1.4.7
+matplotlib==3.7.1
 pandas==1.5.3
 pyspark==3.4.1
+seaborn==0.12.2
