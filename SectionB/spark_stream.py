@@ -53,8 +53,7 @@ def kafka_consumer(kafka_bootstrap_servers, kafka_topic):
         .alias("content_size"),
     )
 
-    hdfs_output_path = './temp/'
-    # hdfs_output_path = "hdfs://127.0.0.1:9000/output"
+    hdfs_output_path = "hdfs://127.0.0.1:9000/output"
 
     query = (
         logs_df.writeStream.outputMode("append")
@@ -73,8 +72,7 @@ def count_null(col_name):
 
 def batch_transform(logs_df, id):
     # Specify the HDFS output path
-    hdfs_output_path = './temp/'
-    # hdfs_output_path = "hdfs://127.0.0.1:9000/output"
+    hdfs_output_path = "hdfs://127.0.0.1:9000/output"
     
     # Content Size Statistics
     content_size_summary_df = logs_df.agg(
