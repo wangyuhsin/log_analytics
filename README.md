@@ -13,7 +13,7 @@ Once the data is received by the consumer, we will utilize Spark to perform tran
 Finally, the results (e.g., dataframes or RDDs from final transformation) obtained from each analysis will be converted into the Parquet file format, and then these Parquet files will be stored in HDFS.
 
 Flow:
-Log File -> Kafka (Producer) -> Spark with Kafka (Consumer which performs transformation using Spark) -> Create Parquet files -> Store the Parquet file in HDFS
+![Flow](flow.png)
 
 ## Kafka Producer
 
